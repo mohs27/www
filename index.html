@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <!--FiveCon-->
+    <link
+      rel="shortcut icon"
+      href="./img/WhatsApp.svg.webp"
+      type="image/x-icon"
+    />
+
+    <!-- Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/8eebd5e0b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>WhatsApp Web Clone</title>
+  </head>
+
+  <body>
+    <div id="background-green-bar"></div>
+    <div id="container-hug-back">
+      <aside class="left-bar">
+        <!-- PROFILE SESSION -->
+        <section class="profile-bar">
+          <div class="container-profile-photo">
+            <img
+              src="./img/avatar1.png"
+              class="photo"
+              id="my-photo-profile"
+              alt="profile photo"
+            />
+          </div>
+          <div class="container-tools-icons">
+            <i class="fa-solid fa-spinner"></i>
+            <i class="fa-solid fa-message"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </section>
+        <!-- SEARCHING BAR -->
+        <section class="search-chat-bar">
+          <div class="container-search-chat">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              placeholder="Pesquisar ou começar uma nova conversa"
+            />
+          </div>
+          <i class="fa-solid fa-filter"></i>
+        </section>
+
+        <!-- SESSION CHAT-->
+        <section class="section-chat">
+          <!-- CHAT 1 -->
+          <div class="chat-container" id="chat-selected">
+            <div class="container-profile-photo container-profile-photo-chat">
+              <img
+                src="./img/avatar2.png"
+                class="photo photo-profile-chat"
+                alt="photo profile someone"
+              />
+            </div>
+
+            <div class="container-user-info">
+              <div class="container-name-time">
+                <p class="user-name">Natália Cruz</p>
+                <p class="time-chat">07h27</p>
+              </div>
+              <div class="msg-content">
+                <p class="prev-message">
+                  <i class="fa-solid fa-check-double read"></i>
+                  Amo vc! s2
+                </p>
+                <div class="msg-icon">
+                  <img
+                    src="./img/icons8-push-pin-30.png"
+                    class="pinned-chat"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHAT 2 -->
+          <div class="chat-container">
+            <div class="container-profile-photo container-profile-photo-chat">
+              <img
+                src="./img/avatar4.png"
+                class="photo photo-profile-chat"
+                alt="photo profile someone"
+              />
+            </div>
+            <div class="container-user-info">
+              <div class="container-name-time">
+                <p class="user-name">Cristiane Soares</p>
+                <p class="time-chat">17h53</p>
+              </div>
+              <div class="msg-content">
+                <p class="prev-message">Leva o casaco!</p>
+                <div class="msg-icon">
+                  <img
+                    src="./img/icons8-push-pin-30.png"
+                    class="pinned-chat"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHAT 3 -->
+          <div class="chat-container">
+            <div class="container-profile-photo container-profile-photo-chat">
+              <img
+                src="./img/avatar11.png"
+                class="photo photo-profile-chat"
+                alt="photo profile someone"
+              />
+            </div>
+            <div class="container-user-info">
+              <div class="container-name-time">
+                <p class="user-name">Ester Karolyne</p>
+                <p class="time-chat">10h29</p>
+              </div>
+              <div class="msg-content">
+                <p class="prev-message">muito bom! kkkk</p>
+                <div class="msg-icon">
+                  <img
+                    src="./img/icons8-push-pin-30.png"
+                    class="pinned-chat"
+                    alt=""
+                  />
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHAT 4 -->
+          <div class="chat-container">
+            <div class="container-profile-photo container-profile-photo-chat">
+              <img
+                src="./img/avatar3.png"
+                class="photo photo-profile-chat"
+                alt="photo profile someone"
+              />
+            </div>
+            <div class="container-user-info">
+              <div class="container-name-time">
+                <p class="user-name">Grupo da Família</p>
+                <p class="time-chat">06h17</p>
+              </div>
+              <div class="msg-content">
+                <p class="prev-message">
+                  Tia: <i class="fa-solid fa-video"></i> Vídeo
+                </p>
+                <div class="msg-icon">
+                  <i class="fa-solid fa-volume-xmark"></i>
+                  <div class="pending-msg">
+                    <p class="pending-msg-amount">9</p>
+                  </div>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHAT 5 -->
+          <div class="chat-container">
+            <div class="container-profile-photo container-profile-photo-chat">
+              <img
+                src="./img/avatar5.png"
+                class="photo photo-profile-chat"
+                alt="photo profile someone"
+              />
+            </div>
+            <div class="container-user-info">
+              <div class="container-name-time">
+                <p class="user-name">Victor Mouza</p>
+                <p class="time-chat">16h02</p>
+              </div>
+              <div class="msg-content">
+                <p class="prev-message">
+                  <i class="fa-solid fa-check-double"></i>
+                  Me ajuda com js?
+                </p>
+                <div class="msg-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHAT 6 -->
+          <div class="chat-container">
+            <div class="container-profile-photo container-profile-photo-chat">
+              <img
+                src="./img/avatar6.png"
+                class="photo photo-profile-chat"
+                alt="photo profile someone"
+              />
+            </div>
+            <div class="container-user-info">
+              <div class="container-name-time">
+                <p class="user-name">Carlos Corrêa</p>
+                <p class="time-chat">08h06</p>
+              </div>
+              <div class="msg-content">
+                <p class="prev-message">
+                  <i class="fa-solid fa-camera"></i>
+                  Foto
+                </p>
+                <div class="msg-icon">
+                  <div class="pending-msg">
+                    <p class="pending-msg-amount">1</p>
+                  </div>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHAT 7 -->
+          <div class="chat-container">
+            <div class="container-profile-photo container-profile-photo-chat">
+              <img
+                src="./img/avatar7.png"
+                class="photo photo-profile-chat"
+                alt="photo profile someone"
+              />
+            </div>
+            <div class="container-user-info">
+              <div class="container-name-time">
+                <p class="user-name">Vinícius Jales</p>
+                <p class="time-chat">11h41</p>
+              </div>
+              <div class="msg-content">
+                <p class="prev-message">
+                  <i class="fa-solid fa-check-double read"></i>
+                  olha esse hq!
+                </p>
+                <div class="msg-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHAT 8 -->
+          <div class="chat-container">
+            <div class="container-profile-photo container-profile-photo-chat">
+              <img
+                src="./img/avatar8.png"
+                class="photo photo-profile-chat"
+                alt="photo profile someone"
+              />
+            </div>
+            <div class="container-user-info">
+              <div class="container-name-time">
+                <p class="user-name">Sônia (cliente)</p>
+                <p class="time-chat">ontem</p>
+              </div>
+              <div class="msg-content">
+                <p class="prev-message">
+                  <i class="fa-solid fa-phone-slash"></i>
+                  Chamada de voz perdida
+                </p>
+                <div class="msg-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHAT 9 -->
+          <div class="chat-container">
+            <div class="container-profile-photo container-profile-photo-chat">
+              <img
+                src="./img/avatar9.png"
+                class="photo photo-profile-chat"
+                alt="photo profile someone"
+              />
+            </div>
+
+            <div class="container-user-info">
+              <div class="container-name-time">
+                <p class="user-name">Alexandra Souza</p>
+                <p class="time-chat">09/01/23</p>
+              </div>
+              <div class="msg-content">
+                <p class="prev-message">
+                  <i class="fa-solid fa-microphone read"></i>
+                  0:27
+                </p>
+                <div class="msg-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CHAT 10 -->
+          <div class="chat-container">
+            <div class="container-profile-photo container-profile-photo-chat">
+              <img
+                src="./img/avatar10.png"
+                class="photo photo-profile-chat"
+                alt="photo profile someone"
+              />
+            </div>
+            <div class="container-user-info">
+              <div class="container-name-time">
+                <p class="user-name">Simone (cliente)</p>
+                <p class="time-chat">10/01/23</p>
+              </div>
+              <div class="msg-content">
+                <p class="prev-message">O projeto ficou perfeito, obrigada!</p>
+                <div class="msg-icon">
+                  <div class="pending-msg">
+                    <p class="pending-msg-amount">3</p>
+                  </div>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- MAIN CHAT AREA -->
+      <main class="right-content">
+        <!-- MAIN BAR -->
+        <section class="selected-chat-bar">
+          <div class="container-profile-photo container-profile-photo-chat">
+            <img
+              src="./img/avatar2.png"
+              class="photo photo-profile-chat"
+              alt="photo profile someone"
+              id="main-chat-photo-profile"
+            />
+          </div>
+          <div class="container-user-info">
+            <div class="container-name-status-icons">
+              <div class="name-and-status">
+                <p class="user-name">Natália Cruz</p>
+                <p class="user-status">online</p>
+              </div>
+              <div class="main-chat-icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CHAT AREA -->
+        <section class="chat-area" id="id-chat-area">
+          <div class="background-img"></div>
+          <div class="main-chat-content">
+            <div class="out msg-content-container msg-top">
+              <div>
+                <p class="msg-chat-content">Oi</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">
+                  06h31<i class="fa-solid fa-check-double read"></i>
+                </p>
+              </div>
+            </div>
+            <div class="out msg-content-container msg-bottom">
+              <div>
+                <p class="msg-chat-content">Bom dia, amor</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">
+                  06h31<i class="fa-solid fa-check-double read"></i>
+                </p>
+              </div>
+            </div>
+            <div class="in msg-content-container msg-top">
+              <div>
+                <p class="msg-chat-content">Bom dia</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">06h33</p>
+              </div>
+            </div>
+            <div class="in msg-content-container msg-bottom">
+              <div>
+                <p class="msg-chat-content">Dormiu bem?</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">06h33</p>
+              </div>
+            </div>
+            <div class="out msg-content-container msg-top">
+              <div>
+                <p class="msg-chat-content">Dormi, só acordei muito cedo!</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">
+                  06h35<i class="fa-solid fa-check-double read"></i>
+                </p>
+              </div>
+            </div>
+            <div class="out msg-content-container msg-middle">
+              <div>
+                <p class="msg-chat-content">To me arrumando</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">
+                  06h47<i class="fa-solid fa-check-double read"></i>
+                </p>
+              </div>
+            </div>
+            <div class="out msg-content-container msg-bottom">
+              <div>
+                <p class="msg-chat-content">Te aviso quando tiver saindo</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">
+                  06h48<i class="fa-solid fa-check-double read"></i>
+                </p>
+              </div>
+            </div>
+            <div class="in msg-content-container msg-top">
+              <div>
+                <p class="msg-chat-content">Blz</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">06h48</p>
+              </div>
+            </div>
+            <div class="out msg-content-container msg-top">
+              <div>
+                <p class="msg-chat-content">To indo pra rodoviária</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">
+                  07h12<i class="fa-solid fa-check-double read"></i>
+                </p>
+              </div>
+            </div>
+            <div class="out msg-content-container msg-bottom">
+              <div>
+                <p class="msg-chat-content">
+                  Te falo quando tiver dentro do ônibus
+                </p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">
+                  07h15<i class="fa-solid fa-check-double read"></i>
+                </p>
+              </div>
+            </div>
+            <div class="in msg-content-container msg-top">
+              <div>
+                <p class="msg-chat-content">ta</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">07h16</p>
+              </div>
+            </div>
+            <div class="out msg-content-container msg-top">
+              <div>
+                <p class="msg-chat-content">Embarquei</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">
+                  07h26<i class="fa-solid fa-check-double read"></i>
+                </p>
+              </div>
+            </div>
+            <div class="in msg-content-container msg-top">
+              <div>
+                <p class="msg-chat-content">Ta bom, meu anjo. boa viagem</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">07h26</p>
+              </div>
+            </div>
+            <div class="in msg-content-container msg-bottom">
+              <div>
+                <p class="msg-chat-content">Te amo muito</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">07h27</p>
+              </div>
+            </div>
+            <div class="out msg-content-container msg-top">
+              <div>
+                <p class="msg-chat-content">Amo vc! s2</p>
+              </div>
+              <div>
+                <div class="div-blank-chat-time"></div>
+                <p class="time-chat-content">
+                  07h27<i class="fa-solid fa-check-double read"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- INPUT MESSAGE CHAT-->
+        <section class="input-msg-container">
+          <div class="emoji-collapse-attach-file">
+            <i class="fa-regular fa-face-laugh"></i>
+            <i class="fa-solid fa-paperclip"></i>
+          </div>
+          <input type="text" placeholder=" Mensagem" />
+          <i class="fa-solid fa-microphone"></i>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
